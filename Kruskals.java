@@ -36,6 +36,8 @@ class Solution{
         rank=new int[V];
         int sum=0;
 
+
+        //least weight is our atmost priority thats why sorting the priority queue based on weights of the nodes and edges
         PriorityQueue<int[]> pq=new PriorityQueue<>(Comparator.comparingInt(a->a[2]));
         for(int []arr:adj){
             pq.offer(arr);
